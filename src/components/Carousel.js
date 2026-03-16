@@ -3,16 +3,22 @@ import React from 'react'
 export default function Carousel() {
   return (
     <div>
-        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" style={{objectFit:"contain !important"}}>
   <div className="carousel-inner">
+    <div className="carousel-caption" style={{zIndex:"10"}}>
+       <form className="d-flex" role="search">
+      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button className="btn btn-outline-success text-white bg-success" type="submit">Search</button>
+    </form>
+    </div>
     <div className="carousel-item active">
-      <img src="https://picsum.photos/seed/pastry/900/700" className="d-block w-100" alt="..."/>
+      <img src="https://picsum.photos/seed/pastry/900/700" className="d-block w-100" style={{filter: "brightness(30%)"}} alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://picsum.photos/seed/momos/900/700" className="d-block w-100" alt="..."/>
+      <img src="https://picsum.photos/seed/momos/900/700" className="d-block w-100" style={{filter: "brightness(30%)"}} alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://picsum.photos/seed/burger/900/700" className="d-block w-100" alt="..."/>
+      <img src="https://picsum.photos/seed/burger/900/700" className="d-block w-100" style={{filter: "brightness(30%)"}} alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
